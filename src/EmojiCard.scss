@@ -1,0 +1,50 @@
+.emojiContainerCard {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  border: 1px solid #01d6da;
+  margin: 8px;
+  width: 20%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .emojiImg {
+    font-size: 5rem;
+    background-color: #01d6da;
+    text-align: center;
+  }
+  .emojiName {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-align: center;
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .emojiTitle {
+    font-size: 1rem;
+    color: #3a3e4b;
+    font-weight: bold;
+    margin: 4px 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .emojiDescriptions {
+    font-size: 0.9rem;
+    color: #828592;
+    margin: 4px 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 450) {
+    .emojiContainerCard {
+      font-size: 2.5rem;
+      width: 100px;
+    }
+    .emojiName {
+      font-size: 0.75rem;
+    }
+  }
+}
